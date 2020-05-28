@@ -1,0 +1,351 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 May 2008 -->
+<head>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/features.js"></script>
+<script type="text/javascript" src="/scripts/webbridge.js"></script>
+<title>OskiCat - UC Berkeley Library Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" title="default" />
+<script type="text/javascript">
+function setFocus()
+{
+     document.getElementById("searcharg").focus();
+}
+</script>
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+</head>
+<body onload="setFocus()">
+<!-- begin toplogo.html file -->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 24 April 2008 -->
+<a href="#content" tabindex=-1><img src="/screens/transparent.gif" width="1" height="1" border="0" alt="Skip to content" title="Skip to content"></a>
+
+<div class="topLogoDiv">
+<div class="floatRight">
+<ul class="headerNav">
+<li><a href="/">Start Over</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/screens/help_index.html">Help</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/screens/help_index2.html">What's Included</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="http://www.lib.berkeley.edu">Library Home</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/patroninfo">My OskiCat</a></li>
+</ul>
+</div>
+<p>&nbsp;</p>
+<div style=" background-color: #FDB515;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 25px;" >You can still access the UC Berkeley Library's services and resources during the closure.&nbsp;<a href="https://www.lib.berkeley.edu/help/research-help/remote-resources">Here's how</a>.
+  </div>
+<a href="/"><img src="/screens/logo_allpatrons.gif" alt="OskiCat: UCB Library Catalog" title="OskiCat: UCB Library Catalog" /></a><br>
+<div class="navset" id="nav">
+<div class="hd">
+<h3>Navigation tabs</h3>
+<ul>
+<li><a href="/"><em>&nbsp;&nbsp;Quick Search&nbsp;&nbsp;</em></a></li>
+<li><a href="/search/X"><em>&nbsp;&nbsp;Advanced Keyword Search&nbsp;&nbsp;</em></a></li>
+<li><a href="http://www.lib.berkeley.edu/research-support/articles"><em>&nbsp;&nbsp;Find Articles&nbsp;&nbsp;</em></a></li>
+<li><a href="/search/r"><em>&nbsp;&nbsp;Course Reserves&nbsp;&nbsp;</em></a></li>
+<li><a href="/patroninfo"><em>&nbsp;&nbsp;Renew Items&nbsp;&nbsp;</em></a></li>
+<li><a href="http://www.lib.berkeley.edu/help/research-help"><em>&nbsp;&nbsp;Questions?&nbsp;&nbsp;</em></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+<br><br>
+<div class="clear"> <!-- content div -->
+
+
+<a name="content"></a>
+<!--end toplogo.html-->
+
+
+<table cellpadding="0" cellspacing="0" border="0" align="center" role="presentation">
+<tr>
+<td style="border: 1px solid #e0e0e0; background-color: #efefef">
+<h1>Quick Search</h1>
+
+<div class="mainMenuSrchTool">
+<form class="unpadded" action="/search" method="post" name="search" id="search">
+<label for="searchtype" class="accessibleAddInfo">Select the type of search</label>
+<select name="searchtype" id="searchtype" onChange="initSort()">
+<option value="X" selected="selected"> Keyword(s)</option>
+<option value="t"> Title begins with...</option>
+<option value="a"> Author (last name, first)</option>
+<option value="d"> Subject begins with...</option>
+<option value="s"> Series begins with...</option>
+</select>
+<input type="hidden" name="SORT" id="SORT" value="D" />
+<label for="searcharg" class="accessibleAddInfo">Enter your search terms</label>
+<input name="searcharg" id="searcharg" type="text" size="30" />
+<label for="searchscope" class="accessibleAddInfo">Limit your search by format or location</label>
+<select name="searchscope" id="searchscope">
+<option value="1" selected="selected"> Entire Collection</option>
+<option value="-"></option>
+<option value="-"><b>Limit to:</b></option>
+<option value="52"> &#149; Available Online</option>
+<option value="55"> &#149; Books</option>
+<option value="58"> &#149; Journals/Magazines/Newspapers</option>
+<option value="57"> &#149; Films/Videos/Slides</option>
+<option value="59"> &#149; Pictures/Graphics</option>
+<option value="60"> &#149; Maps</option>
+<option value="54"> &#149; Archival Materials</option>
+<option value="62"> &#149; Sound Recordings</option>
+<option value="61"> &#149; Musical Scores</option>
+<option value="56"> &#149; Computer Files</option>
+<option value="53"> &#149; Dissertations/Theses</option>
+<option value="-"></option>
+<option value="2"> Anthropology Library</option>
+ <option value="4"> Art History Classics Library</option>
+ <option value="6"> Bancroft Library</option>
+ <option value="43"> Berkeley Art Museum and Pacific Film Archive</option>
+ <option value="8"> Bioscience, Natural Resources & Public Health Library</option>
+ <option value="9"> Business Library</option>
+ <option value="10"> Center for Tebtunis Papyri</option>
+ <option value="11"> Chemistry Library</option>
+ <option value="13"> College of Environmental Design Archives</option>
+ <option value="16"> Doe Reference</option>
+ <option value="17"> Earth Sciences and Map Library</option>
+ <option value="18"> East Asian Library</option>
+ <option value="20"> Engineering Library</option>
+ <option value="21"> Environmental Design Library</option>
+ <option value="22"> Ethnic Studies Library</option>
+ <option value="24"> Graduate Services</option>
+ <option value="25"> Institute of Governmental Studies</option>
+ <option value="27"> Institute of Transportation Studies</option>
+ <option value="103"> Lawrence Berkeley National Lab</option>
+ <option value="30"> Main (Gardner) Stacks</option>
+ <option value="32"> Mark Twain Papers</option>
+ <option value="33"> Mathematics/Statistics Library</option>
+ <option value="34"> Media Resources Center</option>
+ <option value="35"> Moffitt</option>
+ <option value="37"> Morrison Library</option>
+ <option value="38"> Music Library</option>
+ <option value="40"> Newspapers/Microforms</option>
+ <option value="41"> NRLF</option>
+ <option value="42"> Optometry & Health Sciences Library</option>
+ <option value="46"> Physics-Astronomy Library</option>
+ <option value="48"> Social Research Library</option>
+ <option value="49"> South/Southeast Asia Library</option>
+ <option value="50"> UC Archives</option>
+</select>
+<br><br>
+<input type="checkbox" name="availlim" id="availlim" value="1" />
+<span class="availLimMessage">Limit to items not checked out</span><span class="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" value="Submit" name="submit" src="/screens/search.gif" border="0" align="absmiddle" alt="Submit Search" /></span>
+<br><br>
+<a href="/search/X">Advanced Keyword Search</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="http://www.lib.berkeley.edu/research-support/articles">Looking for Articles?</a>&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="/search/c">More Searches</a>
+&nbsp;&nbsp;&#149;&nbsp;&nbsp;<a href="https://guides.lib.berkeley.edu/recent-acquisitions">Recent Acquisitions</a>
+</form>
+
+
+
+
+
+<!-- OskiCat News  
+
+<div class="news_normal">
+<p><b><font color ="red">Brief Oskicat downtime on Monday 10/2 at 6 am</b><br /></font></p>
+<p>
+OskiCat will be down on 10/2 at 6 am.  Oskicat will be back by 7 am.
+</p>
+<p></p>
+</div>
+
+-------- OskiCat News Commented OUT -->
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ <br>
+<br>
+</div>
+<!--end tool -->
+
+
+<div class="mainMenuSrchText" style="padding: 0px 10px 50px 10px">
+<h2>Search Help</h2>
+
+<h3>Keyword(s)</h3>
+<ul>
+<li>atomic OR nuclear</li>
+<li>"artificial intelligence"</li>
+<li>campbell biology</li>
+<li>pollut* (Note: if truncated term matches too many
+keywords no results are returned)</li>
+<li>"climate change" OR "global warming"</li>
+<li>a:mozart t:(sonatas OR fugues)</li>
+</ul>
+
+<h3>Title begins with...</h3>
+<ul>
+<li>for whom the bell</li>
+<li>great gatsby (Note: omit initial articles in all languages)</li>
+<li>science</li>
+<li>new york times</li>
+<li>Русская Африка</li>
+</ul>
+
+<h3>Author</h3>
+<ul>
+<li>morrison, toni</li>
+<li>united states environmental protection agency</li>
+<li>鍾伯毅</li>
+</ul>
+
+<h3>Subject begins with...</h3>
+<ul>
+<li>california history</li>
+<li>indians of north america</li>
+<li>World War, 1939-1945</li>
+</ul>
+
+<h3>Series begins with...</h3>
+<ul>
+<li>berkeley buddhist studies series</li>
+<li>international advances in education</li>
+<li>proceedings of symposia</li>
+<li>Orbis biblicus et orientalis</li>
+</ul>
+
+</div>
+</td>
+</tr>
+
+</table>
+
+
+
+
+<!-- begin botlogo.html file -->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 25 June 2018 -->
+</div><!-- end right container -->
+</div> <!-- end content div -->
+<div style="clear:both"></div>
+<div align="center" style="padding: 30px 10px 10px 10px; font-size: 80%">
+<img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu">Library home</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu/about/faq/">FAQ</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu/help/contact">Contact webmaster</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.berkeley.edu/">UC Berkeley home</a><img src="/screens/dot_gray.gif" alt="" />
+</div>
+
+<script type="text/javascript">
+
+//Removing entries from dropdown Pickup location menu; temp existing in botlogo.html
+
+ var select=document.getElementById('locx00');
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='tb   ') {
+     select.remove(i); //The Bancroft Circ Desk
+   }
+}
+  
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='ss   ') {
+     select.remove(i); //South/Southeast Asia Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='gs   ') {
+     select.remove(i); //Grad Services Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='mc   ') {
+     select.remove(i); //Media Resources Center Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='zi   ') {
+     select.remove(i); //InterLibrary Loan
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='ed   ') {
+     select.remove(i); //Education-Psychology
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='pu   ') {
+     select.remove(i); //Public Health
+   }
+}
+</script>
+
+<!-- begin Google Analytics tracking code -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33760908-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+<!-- end Google Analytics tracking code -->
+
+<!-- INSERT AEON LINKS -- UCB VERSION -->
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/aeon-ucb.js"></script>
+
+<!-- configure MathJax for TeX mathrm processing -->
+<!-- 20181127 (for possible future implementation)
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    TeX: {
+      extensions: ["noUndefined.js"],
+      noUndefined: {
+        attributes: {
+          mathcolor: "black"
+        }
+      }
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+-->
+<!-- end botlogo.html file -->
+
+
+
+<span style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; visibility: visible; font-size: 85%; text-align: center; display: block; ">WebPAC PRO &copy; Innovative Interfaces, Inc.</span>
+</body>
+</html>
+<!--this is customized <screens/mainmenu.html>-->
