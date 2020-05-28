@@ -1,0 +1,5483 @@
+<html   dir="LTR">
+<head>
+<title>OskiCat - UC Berkeley Library Web Catalog                        /All Locations</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/features.js"></script>
+<script type="text/javascript" src="/scripts/webbridge.js"></script>
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+<script type="text/JavaScript">
+<!-- Hide the JS
+startTimeout(6000000, "/");
+// -->
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="6000;URL=/" />
+</noscript>
+
+<script type="text/javascript" src="/screens/bibdisplay.js"></script>
+</head>
+<body bgcolor="#FFFFFF" >
+<!-- begin toplogo.html file -->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 24 April 2008 -->
+<a href="#content" tabindex=-1><img src="/screens/transparent.gif" width="1" height="1" border="0" alt="Skip to content" title="Skip to content"></a>
+
+<div class="topLogoDiv">
+<div class="floatRight">
+<ul class="headerNav">
+<li><a href="/">Start Over</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/screens/help_index.html">Help</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/screens/help_index2.html">What's Included</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="http://www.lib.berkeley.edu">Library Home</a></li>
+<li><img src="/screens/dot_yellow.gif" alt="" title="" /></li>
+<li><a href="/patroninfo">My OskiCat</a></li>
+</ul>
+</div>
+<p>&nbsp;</p>
+<div style=" background-color: #FDB515;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 25px;" >You can still access the UC Berkeley Library's services and resources during the closure.&nbsp;<a href="https://www.lib.berkeley.edu/help/research-help/remote-resources">Here's how</a>.
+  </div>
+<a href="/"><img src="/screens/logo_allpatrons.gif" alt="OskiCat: UCB Library Catalog" title="OskiCat: UCB Library Catalog" /></a><br>
+<div class="navset" id="nav">
+<div class="hd">
+<h3>Navigation tabs</h3>
+<ul>
+<li><a href="/"><em>&nbsp;&nbsp;Quick Search&nbsp;&nbsp;</em></a></li>
+<li><a href="/search/X"><em>&nbsp;&nbsp;Advanced Keyword Search&nbsp;&nbsp;</em></a></li>
+<li><a href="http://www.lib.berkeley.edu/research-support/articles"><em>&nbsp;&nbsp;Find Articles&nbsp;&nbsp;</em></a></li>
+<li><a href="/search/r"><em>&nbsp;&nbsp;Course Reserves&nbsp;&nbsp;</em></a></li>
+<li><a href="/patroninfo"><em>&nbsp;&nbsp;Renew Items&nbsp;&nbsp;</em></a></li>
+<li><a href="http://www.lib.berkeley.edu/help/research-help"><em>&nbsp;&nbsp;Questions?&nbsp;&nbsp;</em></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+<br><br>
+<div class="clear"> <!-- content div -->
+
+
+<a name="content"></a>
+<!--end toplogo.html-->
+
+<div align="center" class="navigationRow">
+<form>
+<a href="/search~S1"><img src="/screens/startover.gif" alt="Start Over" title="Start Over" border="0" /></a>
+<a href="/search~S1/X?NOSRCH=compiler&searchscope=1&SORT=DX&SUBKEY=compiler"><img src="/screens/modify.gif" alt="Modify Search" title="Modify Search" border="0" /></a>
+<a href="/search~S1/X"><img src="/screens/another.gif" alt="Another Search" title="Another Search" border="0" /></a>
+<select name=HISTORY onChange="onSelectChange(this, '~S1')"><option value="">(Search History)</option>
+<OPTION VALUE="Xcompiler&searchscope=1&SORT=DX">Keyword(s): compiler in Entire Collection
+<option value="+/search~S1/X?compiler&searchscope=1&SORT=DX&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+<noscript>
+<h2>Search history function requires JavaScript.</h2>
+</noscript>
+</form>
+</div>
+
+<!-- BEGIN BROWSE SCREEN TABLE -->
+<table width="100%" cellpadding="2" cellspacing="0" border="0" class="browseScreen">
+<!-- BEGIN SEARCH WIDGET -->
+<div align="center">
+<tr align="center" valign="middle">
+<td valign="middle" colspan="2">
+<div  class="browseSearchtool">
+<script type="text/JavaScript">
+<!-- Hide the JS
+var savedScope;
+var savedTag;
+var savedSearch;
+var sortButtonText = null;
+var savedExactSearch = null;
+var sortButtonEvent = null;
+var sortExactBrowseURL = null;
+var sortTypes = new Array();
+var sortLabels = new Array();
+sortTypes[0] = "t";
+sortLabels[0] = "Title";
+sortTypes[1] = "a";
+sortLabels[1] = "Author";
+sortTypes[2] = "c";
+sortLabels[2] = "Year";
+sortTypes[3] = "r";
+sortLabels[3] = "Reverse Year";
+sortTypes[4] = "n";
+sortLabels[4] = "Call Number";
+sortTypes[5] = "m";
+sortLabels[5] = "Material Type";
+sortLabels[6] = "System Sorted";
+sortTypes[6] = "-";
+var sortSelectedValue = "6";
+var nonSortTags = "XYZPHJQILprWw"
+// Unhide the JS -->
+</script>
+<form name="searchtool" target="_self" action="/search~S1/" method='GET'>
+      <label for="searchtype" style="display:none;">SearchType</label> <select name="searchtype" id="searchtype" onChange="initSort()">
+        <option value="X" selected="selected"> Keyword(s)</option>
+        <option value="t"> Title</option>
+        <option value="a"> Author</option>
+        <option value="d"> Subject</option>
+        <option value="s"> Series</option>
+        <option value="c"> LC Call Number</option>
+        <option value="e"> Other Call Number</option>
+        <option value="g"> Govt Doc number</option>
+        <option value="i"> ISBN/ISSN number</option>
+        <option value="j"> Genre/Form</option>
+        <option value="h"> Place of Publication</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="compiler" />
+      &nbsp;
+      <label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
+        <option value="1" selected="selected"> Entire Collection</option>
+        <option value="52"> Available Online</option>
+        <option value="55"> Books/E-Books</option>
+        <option value="58"> Journals/Magazines/Newspapers</option>
+        <option value="57"> Films/Videos</option>
+        <option value="59"> Pictures/Graphics</option>
+        <option value="60"> Maps</option>
+        <option value="54"> Archival Materials</option>
+        <option value="62"> Sound Records</option>
+        <option value="61"> Musical Scores</option>
+        <option value="56"> Computer Files</option>
+        <option value="53"> Dissertations/Theses</option>
+        <option value="2"> Anthropology Library</option>
+        <option value="3"> Architecture Visual Resources Library</option>
+        <option value="4"> Art History Classics Library</option>
+        <option value="6"> Bancroft Library</option>
+        <option value="43"> Berkeley Art Museum and Pacific Film Archive</option>
+        <option value="8"> Bioscience, Natural Resources & Public Health</option>
+        <option value="9"> Business Library</option>
+        <option value="10"> Center for Tebtunis Papyri</option>
+        <option value="11"> Chemistry Library</option>
+        <option value="13"> College of Environmental Design Archives</option>
+        <option value="16"> Doe Reference</option>
+        <option value="17"> Earth Sciences and Map Library</option>
+        <option value="18"> East Asian Library</option>
+        <option value="20"> Engineering Library</option>
+        <option value="21"> Environmental Design Library</option>
+        <option value="22"> Ethnic Studies Library</option>
+        <option value="24"> Graduate Services</option>
+        <option value="25"> Institute of Governmental Studies</option>
+        <option value="27"> Institute of Transportation Studies</option>
+        <option value="103"> Lawrence Berkeley National Lab</option>
+        <option value="30"> Main (Gardner) Stacks</option>
+        <option value="32"> Mark Twain Papers</option>
+        <option value="33"> Mathematics/Statistics Library</option>
+        <option value="34"> Media Center</option>
+        <option value="35"> Moffitt</option>
+        <option value="36"> Moffitt Reference</option>
+        <option value="37"> Morrison Library</option>
+        <option value="38"> Music Library</option>
+        <option value="40"> Newspapers/Microforms</option>
+        <option value="41"> NRLF</option>
+        <option value="42"> Optometry & Health Sciences Library</option>
+        <option value="46"> Physics-Astronomy Library</option>
+        <option value="48"> Social Research Library</option>
+        <option value="49"> South/Southeast Asia Library</option>
+        <option value="50"> UC Archives</option>
+        <option value="64"> NRLF-UC Berkeley</option>
+        <option value="65"> NRLF-UC Santa Cruz</option>
+        <option value="66"> NRLF-UC Davis</option>
+        <option value="67"> NRLF-UC San Francisco</option>
+        <option value="68"> NRLF-UC San Diego</option>
+        <option value="69"> NRLF-UC Irvine</option>
+        <option value="70"> NRLF-UC Los Angeles</option>
+        <option value="71"> NRLF-California State Library</option>
+        <option value="72"> NRLF-UC Riverside</option>
+        <option value="73"> NRLF-UC Santa Barbara</option>
+        <option value="74"> NRLF-Shared Print Collection</option>
+        <option value="75"> NRLF-Secretary of The UC Regents</option>
+      </select>
+      &nbsp;
+
+<span id="sort_cell">
+</span>
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+initSort();
+// Unhide the JS -->
+</script>
+      <input type="hidden" name="SORT" value="DX" /><input type="hidden" name="extended" value="0" />      <input type="submit" name="SUBMIT" value="Search" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="checkbox" name="availlim" value="1"  /> <span class="availLimMessage">Limit to items not checked out</span><br/>
+</div>
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="Xcompiler&SORT=DX" />
+</div>
+</form>
+<div>
+</div>
+<div  class="browseSearchtoolMessage">       <i>28813 results found. </i>Sorted by  <a href="/search~S1/X?compiler&searchscope=1&SORT=D">relevance</a>  | <strong>date</strong>  | <a href="/search~S1/X?compiler&searchscope=1&SORT=AX">title</a> .
+</div>
+<div></div></div>
+
+</td>
+</tr>
+</div>
+<!-- END SEARCH WIDGET -->
+
+<!-- BEGIN BROWSE PAGER -->
+<!-- begin page widgit -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="5">
+
+Result Page&nbsp;&nbsp;&nbsp;<strong>1</strong>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/51%2C28813%2C28813%2CB/browse">2</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/101%2C28813%2C28813%2CB/browse">3</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/151%2C28813%2C28813%2CB/browse">4</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/201%2C28813%2C28813%2CB/browse">5</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/251%2C28813%2C28813%2CB/browse">6</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/301%2C28813%2C28813%2CB/browse">7</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/351%2C28813%2C28813%2CB/browse">8</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/401%2C28813%2C28813%2CB/browse">9</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/451%2C28813%2C28813%2CB/browse">10</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/501%2C28813%2C28813%2CB/browse">11</a>
+...
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/28801%2C28813%2C28813%2CB/browse">577</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/51%2C28813%2C28813%2CB/browse">Next</a>
+<!-- end page widgit -->
+</td>
+<td>&nbsp;</td>
+</tr>
+<!-- END BROWSE PAGER -->
+
+<!-- BEGIN BROWSE SCREEN LEFT CELL: BROWSELIST/BRIEFCIT AREA -->
+<tr><td>
+<table border="0" cellpadding="3" width="100%">
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="5" class="browseSaveJump">
+<form method="POST" action="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/browse" name="export_form" id="export_form" >
+<input type="hidden" name="jumpref" value="Xcompiler">
+<input type="hidden" id="save_func" name="save_func" value=""/>
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked.gif" alt="Save marked records" class="button" border="0" /></a>
+<span name='save_page_btn1' id='save_page_btn1' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" border="0" /></a>
+</span>
+<span name='mylist_btn1' id='mylist_btn1' style='visibility: visible' ><a href="#" onclick="save_to_mylist();">
+<img src="/screens/save_to_my_lists.gif" border="0"/></a>
+</span>
+</td></tr>
+
+
+</td>
+</tr>
+<tr  class="browseHeader">
+<td align="center" class="browseHeaderData">
+Keywords (1-50 of 28813)
+</td>
+</tr>
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Fortran 2018 with parallel programming / Subrata Ray</span>
+<span>
+9780429326097 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25141451" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_1'></a> 1</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25141451" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&1%2C1%2C">Fortran 2018 with parallel programming / Subrata Ray</a></span>
+<br />
+Ray, Subrata, author.<br />
+Boca Raton, FL : CRC Press, [2020]<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1201/9780429326097" onclick="window.open('https://doi.org/10.1201/9780429326097'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780429326097.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+In the Senate of the United States, sitting as a court of impeachment  : in re impeachment of President Donald J. Trump  / Adam B. Schiff [and six others].</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25403373" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_2'></a> 2</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25403373" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&2%2C2%2C">In the Senate of the United States, sitting as a court of impeachment  : in re impeachment of President Donald J. Trump  / Adam B. Schiff [and six others].</a></span>
+<br />
+<br />
+[Washington, D.C.] : [United States House of Representatives], 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://purl.fdlp.gov/GPO/gpo131080" onclick="window.open('https://purl.fdlp.gov/GPO/gpo131080'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Ara tumyŏn challan ch'ŏk hagi ttak choŭn uri Hanchaŏ sajŏn : Hanchaŏ sokttŭt sajŏn / Yi Chae-un oe yŏkkŭm.</span>
+<span>
+9791186288375</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25405295" >
+</span>
+<span>
+2020</span>
+<span>
+East Asian</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_3'></a> 3</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25405295" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&3%2C3%2C">Ara tumyŏn challan ch'ŏk hagi ttak choŭn uri Hanchaŏ sajŏn : Hanchaŏ sokttŭt sajŏn / Yi Chae-un oe yŏkkŭm.</a></span>
+<br />
+Yi, Chae-un, 1958- compiler.<br />
+Kyŏnggi-do Koyang-si : Nomadŭ, 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian Ready Reference</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPL935.5+.Y535+2020/cpl++935.5+y535+2020/-3,-1,,B/browse">PL935.5 .Y535 2020</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;LIB USE ONLY </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9791186288375.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Hatıratlarda Türkiye Yahudileri / derleyenler, Rıfat N. Bali, C.M. Kösemen.</span>
+<span>
+9786057884732</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25442923" >
+</span>
+<span>
+2020</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_4'></a> 4</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25442923" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&4%2C4%2C">Hatıratlarda Türkiye Yahudileri / derleyenler, Rıfat N. Bali, C.M. Kösemen.</a></span>
+<br />
+<br />
+İstanbul : Libra Kitap, 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cDS135.T83+H38+2020/cds++135+t83+h38+2020/-3,-1,,B/browse">DS135.T83 H38 2020</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;IN PROCESS </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9786057884732.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Introduction to logic programming / Michael Genesereth, Vinay K. Chaudhri</span>
+<span>
+9781681737249</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25451188" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_5'></a> 5</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25451188" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&5%2C5%2C">Introduction to logic programming / Michael Genesereth, Vinay K. Chaudhri</a></span>
+<br />
+Genesereth, Michael, author.<br />
+[San Rafael, California] : Morgan & Claypool Publishers, [2020]<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.2200/S00966ED1V01Y201911AIM044" onclick="window.open('https://doi.org/10.2200/S00966ED1V01Y201911AIM044'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Compiler and Runtime Approaches to Enable Large-Scale Irregular Programs [electronic resource]</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25567661" >
+</span>
+<span>
+2020-<br>03-11</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_6'></a> 6</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25567661" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&6%2C6%2C">Compiler and Runtime Approaches to Enable Large-Scale Irregular Programs [electronic resource]</a></span>
+<br />
+<br />
+Oak Ridge, Tenn. : Distributed by the Office of Scientific and Technical Information, U.S. Dept. of Energy, 2020<!--
+<div>
+2020-<br>03-11</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.osti.gov/servlets/purl/1604127" onclick="window.open('http://www.osti.gov/servlets/purl/1604127'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Seismicity of the Earth, 1900-2018  / compiled by Gavin P. Hayes [and four others].</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_map_grayscale.gif" alt="PRINT MAP"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25573207" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_7'></a> 7</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25573207" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_map_grayscale.gif" alt="PRINT MAP"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&7%2C7%2C">Seismicity of the Earth, 1900-2018  / compiled by Gavin P. Hayes [and four others].</a></span>
+<br />
+Geological Survey (U.S.), cartographer.<br />
+[Reston, Va.] : U.S. Department of the Interior, U.S. Geological Survey, 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://purl.fdlp.gov/GPO/gpo133598" onclick="window.open('https://purl.fdlp.gov/GPO/gpo133598'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Beginning Ada Programming : From Novice to Professional / Andrew T. Shvets.</span>
+<span>
+1484254287 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25594121" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_8'></a> 8</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25594121" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&8%2C8%2C">Beginning Ada Programming : From Novice to Professional / Andrew T. Shvets.</a></span>
+<br />
+Shvets, Andrew T.<br />
+Berkeley, CA : Apress L. P., c2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1007/978-1-4842-5428-8" onclick="window.open('https://doi.org/10.1007/978-1-4842-5428-8'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/1484254287.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Verification, model checking, and abstract interpretation : 21st International Conference, VMCAI 2020, New Orleans, LA, USA, January 16-21, 2020, Proceedings / Dirk Beyer, Damien Zufferey (eds.)</span>
+<span>
+3030393224 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25594663" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_9'></a> 9</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25594663" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&9%2C9%2C">Verification, model checking, and abstract interpretation : 21st International Conference, VMCAI 2020, New Orleans, LA, USA, January 16-21, 2020, Proceedings / Dirk Beyer, Damien Zufferey (eds.)</a></span>
+<br />
+VMCAI (Conference) (21st : 2020 : New Orleans, La.)<br />
+Cham : Springer, 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1007/978-3-030-39322-9" onclick="window.open('https://doi.org/10.1007/978-3-030-39322-9'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/3030393224.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Data-driven modeling of cyber-physical systems using side-channel analysis / Sujit Rokka Chhetri, Mohammad Abdullah Al Faruque.</span>
+<span>
+3030379620 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25595262" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_10'></a> 10</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25595262" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&10%2C10%2C">Data-driven modeling of cyber-physical systems using side-channel analysis / Sujit Rokka Chhetri, Mohammad Abdullah Al Faruque.</a></span>
+<br />
+Rokka Chhetri, Sujit.<br />
+Cham : Springer, 2020.<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1007/978-3-030-37962-9" onclick="window.open('https://doi.org/10.1007/978-3-030-37962-9'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/3030379620.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Arabic historical literature from Ghadāmis and Mali : documents from the 18th to 20th century / by Harry T. Norris, with Abd al-Jabbar.</span>
+<span>
+9789004315853 electronic book</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25579300" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_11'></a> 11</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25579300" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&11%2C11%2C">Arabic historical literature from Ghadāmis and Mali : documents from the 18th to 20th century / by Harry T. Norris, with Abd al-Jabbar.</a></span>
+<br />
+Norris, H. T., compiler, translator.<br />
+Leiden ; Boston : Brill, [2020]<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://brill.com/abstract/title/32477" onclick="window.open('https://brill.com/abstract/title/32477'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9789004315853.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+The medieval record : sources of medieval history / Alfred J. Andrea.</span>
+<span>
+9781624668708 electronic book</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25586067" >
+</span>
+<span>
+2020</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_12'></a> 12</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25586067" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&12%2C12%2C">The medieval record : sources of medieval history / Alfred J. Andrea.</a></span>
+<br />
+<br />
+Indianapolis : Hackett Publishing Company, Inc., [2020]<!--
+<div>
+2020</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://ebookcentral.proquest.com/lib/berkeley-ebooks/detail.action?docID=6111115" onclick="window.open('https://ebookcentral.proquest.com/lib/berkeley-ebooks/detail.action?docID=6111115'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781624668708.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Dementia care / Daniel B. Kaplan.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601715" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_13'></a> 13</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601715" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&13%2C13%2C">Dementia care / Daniel B. Kaplan.</a></span>
+<br />
+Kaplan, Daniel B., author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0281" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0281'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Universal basic income / James P. Mulvale.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601718" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_14'></a> 14</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601718" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&14%2C14%2C">Universal basic income / James P. Mulvale.</a></span>
+<br />
+Mulvale, James Patrick, 1950- author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0279" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0279'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Tribal child welfare practice in the United States / Lisa Byers, Dallas Pettigrew.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601717" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_15'></a> 15</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601717" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&15%2C15%2C">Tribal child welfare practice in the United States / Lisa Byers, Dallas Pettigrew.</a></span>
+<br />
+Byers, Lisa, author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0283" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0283'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Workforce development of social workers pre- and post-employment / Anita Barbee, Megal Paul.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601713" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_16'></a> 16</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601713" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&16%2C16%2C">Workforce development of social workers pre- and post-employment / Anita Barbee, Megal Paul.</a></span>
+<br />
+Barbee, Anita P., compiler.<br />
+New York : Oxford University Press, 2020-<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0285" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0285'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Child neglect and emotional maltreatment / Cassandra Simmel, Svetlana Shpiegel.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601714" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_17'></a> 17</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601714" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&17%2C17%2C">Child neglect and emotional maltreatment / Cassandra Simmel, Svetlana Shpiegel.</a></span>
+<br />
+Simmel, Cassandra, author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0284" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0284'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Child maltreatment prevention / Michelle Johnson-Motoyama, Starr Davis.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601716" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_18'></a> 18</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601716" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&18%2C18%2C">Child maltreatment prevention / Michelle Johnson-Motoyama, Starr Davis.</a></span>
+<br />
+Johnson-Motoyama, Michelle, author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0282" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0282'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Social work and social welfare in East, West, and Central Africa / Godfred Boahen.</span>
+<span>
+9780195389678 (module)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25601719" >
+</span>
+<span>
+2020 -</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_19'></a> 19</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25601719" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&19%2C19%2C">Social work and social welfare in East, West, and Central Africa / Godfred Boahen.</a></span>
+<br />
+Boahen, Godfred, author, compiler.<br />
+New York, NY : Oxford University Press, [2020-]<!--
+<div>
+2020 -</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://dx.doi.org/10.1093/OBO/9780195389678-0280" onclick="window.open('http://dx.doi.org/10.1093/OBO/9780195389678-0280'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Naqsh-i ṭabīʻt dar shiklʹgīrī-i asāṭīr-i Īrān / mūalifīn Abūlqāsim Dāvar, Rūyā Rūzbahānī.</span>
+<span>
+9786007261361</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24857734" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_20'></a> 20</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24857734" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&20%2C20%2C">Naqsh-i ṭabīʻt dar shiklʹgīrī-i asāṭīr-i Īrān / mūalifīn Abūlqāsim Dāvar, Rūyā Rūzbahānī.</a></span>
+<br />
+Dāvar, Abūl Qāsim, compiler.<br />
+Tihrān : Mihr-i Nawrūz, 1397 [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPK6412.M98+D38+2019/cpk+6412+m98+d38+2019/-3,-1,,B/browse">PK6412.M98 D38 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9786007261361.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+The Institute of International Law's resolution on state succession and state responsibility : introduction, text and commentaries / Marcelo G. Kohen, Patrick Dumberry</span>
+<span>
+9781108677905 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24864338" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_21'></a> 21</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24864338" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&21%2C21%2C">The Institute of International Law's resolution on state succession and state responsibility : introduction, text and commentaries / Marcelo G. Kohen, Patrick Dumberry</a></span>
+<br />
+Kohen, Marcelo G., author.<br />
+Cambridge : Cambridge University Press, 2019<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1017/9781108677905" onclick="window.open('https://doi.org/10.1017/9781108677905'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781108677905.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+English-isiZulu / isiZulu-English Dictionary [electronic resource] : Fourth Edition / compiled by C.M. Doke, D.M. Malcolm, J.M.A. Sikakana, B.W. Vilakazi.</span>
+<span>
+9781868147397</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24873379" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_22'></a> 22</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24873379" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&22%2C22%2C">English-isiZulu / isiZulu-English Dictionary [electronic resource] : Fourth Edition / compiled by C.M. Doke, D.M. Malcolm, J.M.A. Sikakana, B.W. Vilakazi.</a></span>
+<br />
+Doke, Clement M. (Clement Martyn), 1893-1980, compiler.<br />
+Baltimore, Maryland : Project Muse, 2019 (Baltimore, Md. : Project MUSE,  2015)<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://muse.jhu.edu/book/60537/" onclick="window.open('https://muse.jhu.edu/book/60537/'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781868147397.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Using Compiler Directives for Performance Portability in Scientific Computing [electronic resource] : Kernels from Molecular Simulation</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24875966" >
+</span>
+<span>
+2019-<br>01-01</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_23'></a> 23</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24875966" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&23%2C23%2C">Using Compiler Directives for Performance Portability in Scientific Computing [electronic resource] : Kernels from Molecular Simulation</a></span>
+<br />
+<br />
+Washington, D.C. : United States. Dept. of Energy. Office of Advanced Scientific Computing Research, 2019<!--
+<div>
+2019-<br>01-01</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.osti.gov/scitech/biblio/1493976" onclick="window.open('http://www.osti.gov/scitech/biblio/1493976'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Han'guk tongnip undong inmyŏng sajŏn / Han'guk Tongnip Undong Inmyŏng Sajŏn P'yŏnch'an Wiwŏnhoe p'yŏn.</span>
+<span>
+9788964681671 (set)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24887861" >
+</span>
+<span>
+2019</span>
+<span>
+East Asian</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_24'></a> 24</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24887861" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&24%2C24%2C">Han'guk tongnip undong inmyŏng sajŏn / Han'guk Tongnip Undong Inmyŏng Sajŏn P'yŏnch'an Wiwŏnhoe p'yŏn.</a></span>
+<br />
+<br />
+Ch'ungnam Ch'ŏnan-si : Tongnip Kinyŏmgwan, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian Ready Reference</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cDS916.57+.C465+2019/cds++916.57+c465+2019/-3,-1,,B/browse">DS916.57 .C465 2019</a> <!-- field v -->&nbsp;v.1 <!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian Ready Reference</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cDS916.57+.C465+2019/cds++916.57+c465+2019/-3,-1,,B/browse">DS916.57 .C465 2019</a> <!-- field v -->&nbsp;v.2 <!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian Ready Reference</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cDS916.57+.C465+2019/cds++916.57+c465+2019/-3,-1,,B/browse">DS916.57 .C465 2019</a> <!-- field v -->&nbsp;v.3 <!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9788964681671.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Delo Zorge : telegrammy i pisʹma : (1930-1945) / sostavitelʹ A.G. Fesi︠u︡n.</span>
+<span>
+9785891632592</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24890342" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_25'></a> 25</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24890342" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&25%2C25%2C">Delo Zorge : telegrammy i pisʹma : (1930-1945) / sostavitelʹ A.G. Fesi︠u︡n.</a></span>
+<br />
+<br />
+Moskva : T︠s︡entr gumanitarnykh init︠s︡iativ : Serebri︠a︡nye niti, 2018.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cUB271.R92+S563+2019/cub++271+r92+s563+2019/-3,-1,,B/browse">UB271.R92 S563 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9785891632592.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Edward M. Kennedy : an oral history / Barbara A. Perry.</span>
+<span>
+9780190644840 hardcover</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24891286" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_26'></a> 26</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24891286" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&26%2C26%2C">Edward M. Kennedy : an oral history / Barbara A. Perry.</a></span>
+<br />
+Perry, Barbara A. (Barbara Ann), 1956- compiler.<br />
+New York, NY : Oxford University Press, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cE840.8.K35+P47+2019/ce+++840.8+k35+p47+2019/-3,-1,,B/browse">E840.8.K35 P47 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780190644840.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Fearless cities : a guide to the global municipalist movement / compiled by Barcelona En Comú ; contributions from Debbie Bookchin, Ada Colau et al.</span>
+<span>
+9781780265032 paperback</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24891405" >
+</span>
+<span>
+2019</span>
+<span>
+Environmental Design</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_27'></a> 27</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24891405" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&27%2C27%2C">Fearless cities : a guide to the global municipalist movement / compiled by Barcelona En Comú ; contributions from Debbie Bookchin, Ada Colau et al.</a></span>
+<br />
+<br />
+Oxford, UK : New Internationalist, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/environmental-design-library">Environmental Design</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cJF799+.F43+2019/cjf++799+f43+2019/-3,-1,,B/browse">JF799 .F43 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781780265032.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Amharic student dictionary : English-Amharic, Amharic-English / compiled by Girum Asanke.</span>
+<span>
+9780781813907 paperback</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24891420" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_28'></a> 28</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24891420" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&28%2C28%2C">Amharic student dictionary : English-Amharic, Amharic-English / compiled by Girum Asanke.</a></span>
+<br />
+<br />
+New York : Hippocrene Books, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPJ9237.E7Z4+A44+2019/cpj+9237+e7+z4+a44+2019/-3,-1,,B/browse">PJ9237.E7Z4 A44 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780781813907.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Mississippi witness : the photographs of Florence Mars / James T. Campbell and Elaine Owens.</span>
+<span>
+9781496820907 hardcover</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24891456" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_29'></a> 29</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24891456" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&29%2C29%2C">Mississippi witness : the photographs of Florence Mars / James T. Campbell and Elaine Owens.</a></span>
+<br />
+<br />
+Jackson : University Press of Mississippi, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cE185.93.M6+M578+2019/ce+++185.93+m6+m578+2019/-3,-1,,B/browse">E185.93.M6 M578 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781496820907.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+An illustrated dictionary of Navajo landscape terms / David M. Mark, David Stea, Carmelita Topaha, compilers and editors.</span>
+<span>
+9781433160585 paperback alkaline paper</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24894048" >
+</span>
+<span>
+2019</span>
+<span>
+Environmental Design</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_30'></a> 30</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24894048" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&30%2C30%2C">An illustrated dictionary of Navajo landscape terms / David M. Mark, David Stea, Carmelita Topaha, compilers and editors.</a></span>
+<br />
+<br />
+New York : Peter Lang Publishing, Inc., [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/environmental-design-library">Environmental Design</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPM2008+.M375+2019/cpm+2008+m375+2019/-3,-1,,B/browse">PM2008 .M375 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781433160585.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Smartphone-based real-time digital signal processing / Nasser Kehtarnavaz, Abhishek Sehgal, and Shane Parris</span>
+<span>
+9781681734668 (ebook)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24896507" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_31'></a> 31</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24896507" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&31%2C31%2C">Smartphone-based real-time digital signal processing / Nasser Kehtarnavaz, Abhishek Sehgal, and Shane Parris</a></span>
+<br />
+Kehtarnavaz, Nasser, author.<br />
+[San Rafael, California] : Morgan & Claypool Publishers, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.2200/S00885ED2V01Y201811SPR016" onclick="window.open('https://doi.org/10.2200/S00885ED2V01Y201811SPR016'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781681734668.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Transactions on high-performance embedded architectures and compilers V / Per Stenström, Cristina Silvano, Koen Bertels, Michael Schulte (eds.)</span>
+<span>
+9783662588345 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24914707" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_32'></a> 32</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24914707" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&32%2C32%2C">Transactions on high-performance embedded architectures and compilers V / Per Stenström, Cristina Silvano, Koen Bertels, Michael Schulte (eds.)</a></span>
+<br />
+<br />
+Berlin, Germany : Springer, 2019<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1007/978-3-662-58834-5" onclick="window.open('https://doi.org/10.1007/978-3-662-58834-5'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9783662588345.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Understanding the case against Shukden : the history of a contested Tibetan practice / compiled by The Association of Geluk Masters, The Geluk International Foundation and The Association for the Preservation of Geluk Monasticism ; translated by Gavin Kilty ; foreword by Lama Zopa Rinpoché.</span>
+<span>
+9781614295358 paperback alkaline paper</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24927397" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_33'></a> 33</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24927397" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&33%2C33%2C">Understanding the case against Shukden : the history of a contested Tibetan practice / compiled by The Association of Geluk Masters, The Geluk International Foundation and The Association for the Preservation of Geluk Monasticism ; translated by Gavin Kilty ; foreword by Lama Zopa Rinpoché.</a></span>
+<br />
+<br />
+Somerville, MA : Wisdom Publications, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cBQ4890.R373+T5528213+2019/cbq+4890+r373+t5528213+2019/-3,-1,,B/browse">BQ4890.R373 T5528213 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781614295358.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+By the Fire [electronic resource] : Sami Folktales and Legends / collected and illustrated by Emilie Demant Hatt ; translated by Barbara Sjoholm.</span>
+<span>
+9781452959566</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24941242" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_34'></a> 34</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24941242" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&34%2C34%2C">By the Fire [electronic resource] : Sami Folktales and Legends / collected and illustrated by Emilie Demant Hatt ; translated by Barbara Sjoholm.</a></span>
+<br />
+<br />
+Minneapolis : University of Minnesota Press, 2019. (Baltimore, Md. : Project MUSE,  2015)<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://muse.jhu.edu/book/65045/" onclick="window.open('https://muse.jhu.edu/book/65045/'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781452959566.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Swift/T Guide [electronic resource]</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24942337" >
+</span>
+<span>
+2019-<br>04-01</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_35'></a> 35</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24942337" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&35%2C35%2C">Swift/T Guide [electronic resource]</a></span>
+<br />
+<br />
+Washington, D.C. : United States. Dept. of Energy., 2019<!--
+<div>
+2019-<br>04-01</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.osti.gov/scitech/biblio/1506475" onclick="window.open('http://www.osti.gov/scitech/biblio/1506475'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Korea's premier collection of classical literature : selections from Sŏ Kŏjŏng's Tongmunsŏn / translated, annotated, and with an introduction by Xin Wei and James B. Lewis</span>
+<span>
+9780824878214 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24961832" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_36'></a> 36</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24961832" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&36%2C36%2C">Korea's premier collection of classical literature : selections from Sŏ Kŏjŏng's Tongmunsŏn / translated, annotated, and with an introduction by Xin Wei and James B. Lewis</a></span>
+<br />
+<br />
+Honolulu : University of Hawaiʻi Press, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.jstor.org/stable/10.2307/j.ctv7r4300" onclick="window.open('http://www.jstor.org/stable/10.2307/j.ctv7r4300'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780824878214.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Interconexiones, transferencias e información : revistas culturales latinoamericanas / Maruša Fakin, Ricarda Musser y Britta Steinke (eds.).</span>
+<span>
+9783935656733</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24965588" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_37'></a> 37</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24965588" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&37%2C37%2C">Interconexiones, transferencias e información : revistas culturales latinoamericanas / Maruša Fakin, Ricarda Musser y Britta Steinke (eds.).</a></span>
+<br />
+<br />
+Berlin : Ibero-Amerikanisches Institut, Preußischer Kulturbesitz, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPN4930+.I58+2019/cpn+4930+i58+2019/-3,-1,,B/browse">PN4930 .I58 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9783935656733.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+ROSE Compiler Framework [electronic resource]</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24969145" >
+</span>
+<span>
+2019-<br>05-15</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_38'></a> 38</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24969145" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&38%2C38%2C">ROSE Compiler Framework [electronic resource]</a></span>
+<br />
+<br />
+Washington, D.C. : United States. National Nuclear Security Administration, 2019<!--
+<div>
+2019-<br>05-15</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.osti.gov/scitech/biblio/1512867" onclick="window.open('http://www.osti.gov/scitech/biblio/1512867'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Leo Tolstoy in Conversation with Four Peasant Sectarian Writers [electronic resource] : The Complete Correspondence / edited by Andrew Donskov ; letters compiled by Liudmila Gladkova and Andrew Donskov ; correspondence translated from the Russian by John Woodsworth.</span>
+<span>
+9780776627809</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24973438" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_39'></a> 39</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24973438" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&39%2C39%2C">Leo Tolstoy in Conversation with Four Peasant Sectarian Writers [electronic resource] : The Complete Correspondence / edited by Andrew Donskov ; letters compiled by Liudmila Gladkova and Andrew Donskov ; correspondence translated from the Russian by John Woodsworth.</a></span>
+<br />
+<br />
+Baltimore, Maryland : Project Muse, 2019 (Baltimore, Md. : Project MUSE,  2015)<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://muse.jhu.edu/book/65937/" onclick="window.open('https://muse.jhu.edu/book/65937/'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780776627809.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Programming TypeScript : making your JavaScript applications scale / Boris Cherny</span>
+<span>
+9781492037620 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24973840" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_40'></a> 40</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24973840" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&40%2C40%2C">Programming TypeScript : making your JavaScript applications scale / Boris Cherny</a></span>
+<br />
+Cherny, Boris, author.<br />
+Sebastopol, CA : O'Reilly Media, Inc., 2019<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://uclibs.org/PID/331269" onclick="window.open('http://uclibs.org/PID/331269'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781492037620.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+The Forest Futures Horizon Scanning Project / Andy Hines, David N. Bengston, and Michael J. Dockry, compilers.</span>
+<span>
+</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24976973" >
+</span>
+<span>
+2019-<br>03-</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_41'></a> 41</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24976973" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&41%2C41%2C">The Forest Futures Horizon Scanning Project / Andy Hines, David N. Bengston, and Michael J. Dockry, compilers.</a></span>
+<br />
+Hines, Andy, compiler.<br />
+Newton Square, PA : USDA Forest Service, Northern Research Station, March 2019.<!--
+<div>
+2019-<br>03-</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://purl.fdlp.gov/GPO/gpo120698" onclick="window.open('https://purl.fdlp.gov/GPO/gpo120698'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Contemporary high performance computing : from Petascale toward Exascale. Volume 3 / edited by Jeffrey S. Vetter</span>
+<span>
+9781351036849 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24978539" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_42'></a> 42</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24978539" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&42%2C42%2C">Contemporary high performance computing : from Petascale toward Exascale. Volume 3 / edited by Jeffrey S. Vetter</a></span>
+<br />
+<br />
+Boca Raton : CRC Press, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.crcnetbase.com/doi/book/10.1201/9781351036863" onclick="window.open('http://www.crcnetbase.com/doi/book/10.1201/9781351036863'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9781351036849.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Modeling Communication Networks and Protocols : Implementation via the SMURPH System / Paweł Gburzyński</span>
+<span>
+9783030153915 (electronic bk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24979017" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_43'></a> 43</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24979017" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&43%2C43%2C">Modeling Communication Networks and Protocols : Implementation via the SMURPH System / Paweł Gburzyński</a></span>
+<br />
+Gburzyński, Paweł, author.<br />
+Cham, Switzerland : Springer, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://doi.org/10.1007/978-3-030-15391-5" onclick="window.open('https://doi.org/10.1007/978-3-030-15391-5'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9783030153915.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+After promontory : one hundred and fifty years of transcontinental railroading / Center for Railroad Photography and Art ; with essays by Keith L. Bryant Jr. [and 3 others] ; foreword by Robert D. Krebs ; introduction by H. Roger Grant ; edited by Peter A. Hansen.</span>
+<span>
+9780253039606 hardcover ; alkaline paper</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24980301" >
+</span>
+<span>
+2019</span>
+<span>
+Bancroft</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_44'></a> 44</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24980301" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&44%2C44%2C">After promontory : one hundred and fifty years of transcontinental railroading / Center for Railroad Photography and Art ; with essays by Keith L. Bryant Jr. [and 3 others] ; foreword by Robert D. Krebs ; introduction by H. Roger Grant ; edited by Peter A. Hansen.</a></span>
+<br />
+<br />
+[Bloomington, Indiana] : Indiana University Press, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/bancroft-library">Bancroft Folio</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cf+TR715+.A37+2019/ctr++715+a37+2019/-3,-1,,B/browse">f TR715 .A37 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;IN PROCESS </td>
+<td width="12%" ><!-- field ! -->&nbsp;LIB USE ONLY</td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780253039606.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Korea's premier collection of classical literature : selections from Sŏ Kŏjŏng's Tongmunsŏn / translated, annotated, and with an introduction by Xin Wei and James B. Lewis.</span>
+<span>
+9780824877309 hardcover ; alkaline paper</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24981687" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_45'></a> 45</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24981687" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&45%2C45%2C">Korea's premier collection of classical literature : selections from Sŏ Kŏjŏng's Tongmunsŏn / translated, annotated, and with an introduction by Xin Wei and James B. Lewis.</a></span>
+<br />
+<br />
+Honolulu : University of Hawaiʻi Press, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cPL984.E1+T66+2019/cpl++984+e1+t66+2019/-3,-1,,B/browse">PL984.E1 T66 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780824877309.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Tasanhak sajŏn / Tasan Haksul Munhwa Chaedan p'yŏn.</span>
+<span>
+9791187130901</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24965107" >
+</span>
+<span>
+2019</span>
+<span>
+East Asian</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_46'></a> 46</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24965107" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&46%2C46%2C">Tasanhak sajŏn / Tasan Haksul Munhwa Chaedan p'yŏn.</a></span>
+<br />
+<br />
+Sŏul-si : Tasan Haksul Munhwa Chaedan, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian Ready Reference</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cB5254.C5644+T38+2019/cb++5254+c5644+t38+2019/-3,-1,,B/browse">B5254.C5644 T38 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9791187130901.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Samguk yusa sajŏn / Chŏng Ho-wan yŏkkŭm.</span>
+<span>
+9788962971880</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24953518" >
+</span>
+<span>
+2019</span>
+<span>
+East Asian</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_47'></a> 47</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24953518" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&47%2C47%2C">Samguk yusa sajŏn / Chŏng Ho-wan yŏkkŭm.</a></span>
+<br />
+Chŏng, Ho-wan, 1943- compiler.<br />
+Kyŏnggi-do P'aju-si : Chimundang, 2019.<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/libraries/east-asian-library">East Asian</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cDS911.2.I793+C4568+2019/cds++911.2+i793+c4568+2019/-3,-1,,B/browse">DS911.2.I793 C4568 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9788962971880.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+The Complete Roster and Service Records of Lee’s Army of Northern Virginia during the Overland Campaign [electronic resource] / Alfred C. Young, III.</span>
+<span>
+9780807173121</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b25016405" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_48'></a> 48</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b25016405" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&48%2C48%2C">The Complete Roster and Service Records of Lee’s Army of Northern Virginia during the Overland Campaign [electronic resource] / Alfred C. Young, III.</a></span>
+<br />
+Young, Alfred C., III, 1946- compiler.<br />
+Baltimore, Maryland : Project Muse, 2019 (Baltimore, Md. : Project MUSE,  2015)<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="https://muse.jhu.edu/book/66086/" onclick="window.open('https://muse.jhu.edu/book/66086/'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780807173121.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+Crónicas de República Dominicana : hay un país en el mundo / colaboraciones, Fran Afonso [and 15 others].</span>
+<span>
+8494896229 (hbk.)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24954154" >
+</span>
+<span>
+2019</span>
+<span>
+Main (Gardner) Stacks</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_49'></a> 49</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24954154" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&49%2C49%2C">Crónicas de República Dominicana : hay un país en el mundo / colaboraciones, Fran Afonso [and 15 others].</a></span>
+<br />
+<br />
+Barcelona : Revista Altaïr, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+&nbsp;</div>
+-->
+<div class="briefcitItems">
+<table id="bib_items" width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="24%"  class="bibItemsHeader">
+Location
+</th>
+<th width="24%"  class="bibItemsHeader">
+Call No.
+</th>
+<th width="12%"  class="bibItemsHeader">
+Status
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="12%"  class="bibItemsHeader">
+&nbsp;
+</th>
+<th width="16%"  class="bibItemsHeader">
+ 
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="24%" ><!-- field 1 -->&nbsp;<a href="http://www.lib.berkeley.edu/sites/default/files/stacks-allfloors.pdf">Main (Gardner) Stacks</a> 
+</td>
+<td width="24%" ><!-- field C -->&nbsp;<a href="/search~S1?/cF1933+.C76+2019/cf++1933+c76+2019/-3,-1,,B/browse">F1933 .C76 2019</a> <!-- field v --><!-- field # -->&nbsp;</td>
+<td width="12%" ><!-- field % -->&nbsp;AVAILABLE </td>
+<td width="12%" ><!-- field ! -->&nbsp; </td>
+<td width="12%" ><!-- field p --></td>
+<td width="16%" ><!-- field Q --></td></tr>
+</table>
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/8494896229.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<style type="text/css">
+.spellcheckTool {display:none}
+</style>
+
+<!-- Start MobileCat customization -->
+<span style="display: none" class="mobileinfo">
+<span>
+After promontory : one hundred and fifty years of transcontinental railroading / Center for Railroad Photography and Art</span>
+<span>
+9780253039613 (e-book)</span>
+<span>
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></span>
+<span>
+<input type="checkbox" 
+name="save" value="b24864127" >
+</span>
+<span>
+2019</span>
+<span>
+Web Resource</span>
+</span>
+<!-- End MobileCat customization -->
+
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="8%" align="center" class="briefcitEntry" >
+<table>
+<tr>
+<td>
+<div class="briefcitEntryNum">
+<a name='anchor_50'></a> 50</div>
+</td>
+<td>
+<input type="checkbox" 
+name="save" value="b24864127" >
+</td>
+<td>
+<div class="briefcitMedia">
+ <img src="/screens/media_book_grayscale.gif" alt="PRINTED MATERIAL"></div>
+</td>
+</tr>
+<!-- +++ Start UCB customization -->
+<tr>
+<td align="left" colspan="3">
+<div class="bakerLink">
+<img src="/screens/baker-trans.gif" alt="" border="0" />
+</div>
+</td>
+</tr>
+<!-- --- End UCB customization -->
+</table>
+
+</td>
+<td align="left" class="briefcitDetail">
+<!--{nohitmsg}-->
+<span class="briefcitTitle">
+<!--{##linkfieldspec:Vbt245ab}-->
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/frameset&FF=Xcompiler&searchscope=1&SORT=DX&50%2C50%2C">After promontory : one hundred and fifty years of transcontinental railroading / Center for Railroad Photography and Art</a></span>
+<br />
+<br />
+Bloomington : Indiana University Press, [2019]<!--
+<div>
+2019</div>
+-->
+<br/>
+<div class="briefcitRequest">
+</div>
+<span class="briefcitStatus">
+</span>
+<!--
+<div class="briefcitActions">
+<a href="http://www.jstor.org/stable/10.2307/j.ctvc5pcwp" onclick="window.open('http://www.jstor.org/stable/10.2307/j.ctvc5pcwp'); return false;"><img src="/screens/bullet.gif" alt="Bullet Point" border="0" style="margin-right:5px"/>Website</a><br />
+</div>
+-->
+<div class="briefcitItems">
+</div>
+</td>
+<td align="center" width="5%">
+<img src="http://images.amazon.com/images/P/9780253039613.01.MZZZZZZZ.jpg" border="0" alt="Book Cover"></td>
+</tr>
+</table>
+</td>
+</tr>
+<!--this is customized <screens/briefcit.html>-->
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="5" class="browseSaveJump">
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked.gif" alt="Save marked records" class="button" border="0" /></a>
+<span name='save_page_btn2' id='save_page_btn2' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" border="0" /></a>
+</span>
+</form>
+
+<form action="/search~S1/X?compiler&searchscope=1&SORT=DX" method="POST">
+<input type="HIDDEN" name="jumpref" value="Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/1%2C28813%2C28813%2CB/browse">
+<script type="text/JavaScript">
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+obj.submit();
+}
+</script>
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><img src="/screens/locateinresults.gif" alt="Locate in results" class="button" width="120" height="20" border="0" /></a>
+
+
+
+<script type="text/JavaScript">
+
+//getFormHandleForm() is in common.js
+var evtobj = getFormHandleForm(1);
+if (document.layers)
+    {
+    document.captureEvents(Event.KEYUP);
+    }
+document.onkeyup = function(evt)
+{
+if (!evt) evt = window.event;
+var keyCode;
+if (evt.which) keyCode = evt.which;
+else if (evt.keyCode) keyCode = evt.keyCode;
+var targ;
+if (evt.target) targ = evt.target;
+else if (evt.srcElement) targ = evt.srcElement;
+if (targ.nodeType == 3) //for Safari bug
+    targ = targ.parentNode;
+if (targ.form)
+    {
+    targ = targ.form;
+    //alert('targ='+targ+'  evtobj='+evtobj);
+    if (keyCode == 13 && targ == evtobj)
+        {
+        iiiDoSubmit_1();
+        }
+    }
+};
+
+</script>
+<input type="TEXT" name="jumpto" value="28813" size="5" maxlength="5">
+</form>
+
+</td></tr>
+
+
+</td>
+</tr>
+</table>
+<!-- END BROWSELIST/BRIEFCIT AREA -->
+</td>
+<!-- END BROWSE SCREEN LEFT CELL -->
+
+<!-- BEGIN BROWSE SCREEN RIGHT CELL -->
+<td valign="top" width="15%">
+<div valign="top"  class="browseResourceTable">
+
+<!-- BEGIN RESOURCE TABLE -->
+<table width="100%"  class="browseResourceTable" cellpadding="0" cellspacing="0">
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><span><center>
+<a href="" onClick="return createResourceWindow('/webbridge~S1/panel?returnurl=%2Fsearch~S1%3F%2FXcompiler%26searchscope%3D1%26SORT%3DDX%2FXcompiler%26searchscope%3D1%26SORT%3DDX%26SUBKEY%3Dcompiler%2F1%252C28813%252C28813%252CB%2Fbrowse');">
+<img src="/screens/resourcelink.gif" alt="Other Resources" border="0" /></a>
+</center></span>
+</td></tr>
+
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><div class="wblinkdisplay">
+<form name="melvyl117_form">
+<a href="" onClick="javascript:loadInNewWindow('/webbridge~S1/showresource?resurl=https%3A%2F%2Fberkeley.on.worldcat.org%2Fsearch%3FdatabaseList%3D%26queryString%3Dcompiler&linkid=0&noframe=1');return false;"><img src="/webbridge/image/button_nextgenmelvyl.gif" border="0"></img></a>
+</form>
+</div></td></tr>
+
+
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><div class="wblinkdisplay">
+<form name="hathitrust120_form">
+<a href="" onClick="javascript:loadInNewWindow('/webbridge~S1/showresource?resurl=https%3A%2F%2Fcatalog.hathitrust.org%2FSearch%2FHome%3Flookfor%3Dcompiler%26searchtype%3Dall%26ft%3D%26setft%3Dfalse&linkid=0&noframe=1');return false;"><img src="/webbridge/image/button_hathitrust.gif" border="0"></img></a>
+</form>
+</div></td></tr>
+
+
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><div class="wblinkdisplay">
+<form name="stanford116_form">
+<a href="" onClick="javascript:loadInNewWindow('/webbridge~S1/showresource?resurl=http%3A%2F%2Fsearchworks.stanford.edu%2F%3F%26q%3Dcompiler%26search_field%3Dsearch&linkid=0&noframe=1');return false;"><img src="/webbridge/image/button_stanford.gif" border="0"></img></a>
+</form>
+</div></td></tr>
+
+
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><div class="wblinkdisplay">
+<form name="crl119_form">
+<a href="" onClick="javascript:loadInNewWindow('/webbridge~S1/showresource?resurl=http%3A%2F%2Fcatalog.crl.edu%2Fsearch%2FY%3FSEARCH%3Dcompiler&linkid=0&noframe=1');return false;"><img src="/webbridge/image/button_crl.gif" border="0"></img></a>
+</form>
+</div></td></tr>
+
+
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><div class="wblinkdisplay">
+<form name="google_books17_form">
+<a href="" onClick="javascript:loadInNewWindow('/webbridge~S1/showresource?resurl=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fq%3Dcompiler&linkid=0&noframe=1');return false;"><img src="/webbridge/image/button_googlebooks.gif" border="0"></img></a>
+</form>
+</div></td></tr>
+
+</table>
+<!-- END RESOURCE TABLE -->
+
+</div>
+
+</td>
+<!-- END BROWSE SCREEN RIGHT CELL -->
+</tr>
+
+<!-- BEGIN BOTTOM BROWSE PAGER -->
+<!-- begin page widgit -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="5">
+
+Result Page&nbsp;&nbsp;&nbsp;<strong>1</strong>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/51%2C28813%2C28813%2CB/browse">2</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/101%2C28813%2C28813%2CB/browse">3</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/151%2C28813%2C28813%2CB/browse">4</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/201%2C28813%2C28813%2CB/browse">5</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/251%2C28813%2C28813%2CB/browse">6</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/301%2C28813%2C28813%2CB/browse">7</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/351%2C28813%2C28813%2CB/browse">8</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/401%2C28813%2C28813%2CB/browse">9</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/451%2C28813%2C28813%2CB/browse">10</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/501%2C28813%2C28813%2CB/browse">11</a>
+...
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/28801%2C28813%2C28813%2CB/browse">577</a>
+<a href="/search~S1?/Xcompiler&searchscope=1&SORT=DX/Xcompiler&searchscope=1&SORT=DX&SUBKEY=compiler/51%2C28813%2C28813%2CB/browse">Next</a>
+<!-- end page widgit -->
+</td>
+<td>&nbsp;</td>
+</tr>
+<!-- END BOTTOM BROWSE PAGER -->
+</table>
+<!-- END BROWSE SCREEN TABLE -->
+<div align="center" class="navigationRow">
+<form>
+<a href="/search~S1"><img src="/screens/startover.gif" alt="Start Over" title="Start Over" border="0" /></a>
+<a href="/search~S1/X?NOSRCH=compiler&searchscope=1&SORT=DX&SUBKEY=compiler"><img src="/screens/modify.gif" alt="Modify Search" title="Modify Search" border="0" /></a>
+<a href="/search~S1/X"><img src="/screens/another.gif" alt="Another Search" title="Another Search" border="0" /></a>
+<select name=HISTORY onChange="onSelectChange(this, '~S1')"><option value="">(Search History)</option>
+<OPTION VALUE="Xcompiler&searchscope=1&SORT=DX">Keyword(s): compiler in Entire Collection
+<option value="+/search~S1/X?compiler&searchscope=1&SORT=DX&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+</form>
+</div>
+
+
+<!-- begin botlogo.html file -->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 25 June 2018 -->
+</div><!-- end right container -->
+</div> <!-- end content div -->
+<div style="clear:both"></div>
+<div align="center" style="padding: 30px 10px 10px 10px; font-size: 80%">
+<img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu">Library home</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu/about/faq/">FAQ</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.lib.berkeley.edu/help/contact">Contact webmaster</a><img src="/screens/dot_gray.gif" alt="" /><a href="http://www.berkeley.edu/">UC Berkeley home</a><img src="/screens/dot_gray.gif" alt="" />
+</div>
+
+<script type="text/javascript">
+
+//Removing entries from dropdown Pickup location menu; temp existing in botlogo.html
+
+ var select=document.getElementById('locx00');
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='tb   ') {
+     select.remove(i); //The Bancroft Circ Desk
+   }
+}
+  
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='ss   ') {
+     select.remove(i); //South/Southeast Asia Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='gs   ') {
+     select.remove(i); //Grad Services Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='mc   ') {
+     select.remove(i); //Media Resources Center Circ Desk
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   if (select.options[i].value=='zi   ') {
+     select.remove(i); //InterLibrary Loan
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='ed   ') {
+     select.remove(i); //Education-Psychology
+   }
+}
+
+for (i=0;i<select.length;  i++) {
+   var v = select.options[i];
+   if (select.options[i].value=='pu   ') {
+     select.remove(i); //Public Health
+   }
+}
+</script>
+
+<!-- begin Google Analytics tracking code -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33760908-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+<!-- end Google Analytics tracking code -->
+
+<!-- INSERT AEON LINKS -- UCB VERSION -->
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/aeon-ucb.js"></script>
+
+<!-- configure MathJax for TeX mathrm processing -->
+<!-- 20181127 (for possible future implementation)
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    TeX: {
+      extensions: ["noUndefined.js"],
+      noUndefined: {
+        attributes: {
+          mathcolor: "black"
+        }
+      }
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+-->
+<!-- end botlogo.html file -->
+
+</body>
+</html>

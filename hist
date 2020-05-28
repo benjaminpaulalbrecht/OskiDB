@@ -1,0 +1,504 @@
+  257  ls
+  258  cd ..
+  259  clear
+  260  ghttps://github.com/dracula/dracula-theme.git
+  261  https://github.com/dracula/dracula-theme.git
+  262  git clone https://github.com/dracula/dracula-theme.git
+  263  cd dracula-theme/
+  264  ls
+  265  cd ..
+  266  clear
+  267  rm -rvf dracula-theme/
+  268  clear
+  269  ls
+  270  git clone https://github.com/dracula/iterm.git
+  271  cd iterm/
+  272  ls
+  273  clear
+  274  clear
+  275  ;s
+  276  clear
+  277  ls
+  278  pwd
+  279  cd ~/Work/VampMacs/
+  280  lsa
+  281  clear
+  282  ls
+  283  cp -v ~/.emacs.d/init.el profile/
+  284  clear
+  285  ls
+  286  cd profile/
+  287  ls
+  288  mkdir Main
+  289  mv -v init.el Main/
+  290  clear
+  291  ls
+  292  rm -rvf init.el~ 
+  293  clear
+  294  ls
+  295  cd Main/
+  296  ls
+  297  cd ..
+  298  cd ..
+  299  clear
+  300  ls
+  301  cd ~/.emacs.d/
+  302  nano init.el
+  303  code .
+  304  open ~/Visual\ Studio\ Code.app/ . 
+  305  ls
+  306  code 
+  307  cp ~/.emacs.d/init.el ~/Work/VampMacs/profile/Main/
+  308  clear
+  309  cp ~/Work/VampMacs/profile/Main/init.el . 
+  310  clear
+  311  ls
+  312  rm -rvf init.el~ 
+  313  clear
+  314  ls
+  315  ls
+  316  cp ~/Work/VampMacs/profile/Main/init.el . 
+  317  cd ~/
+  318  ls
+  319  ls
+  320  cd AutoSaves/
+  321  ls
+  322  cd ..
+  323  clear
+  324  ls
+  325  git
+  326  clear
+  327  which git
+  328  clear
+  329  git --help 
+  330  ls -la `which git`
+  331  clear
+  332  python3
+  333  clear
+  334  nmap http://192.168.1.1
+  335  nmap 192.168.1.1
+  336  nmap 192.168.1.1 -Pn
+  337  ssh 192.168.1.1
+  338  ssh root@192.168.1.1
+  339  clear
+  340  telnet 192.168.1.1
+  341  brew cask install telnet
+  342  ping google.com
+  343  ping 192.168.1.1
+  344  route 
+  345  ip 
+  346  ifconfig
+  347  route --help 
+  348  route -h 
+  349  route show
+  350  route list 
+  351  clear
+  352  ping 192.168.1.1
+  353  curl http://192.168.1.1
+  354  curl http://192.168.1.1:8888
+  355  curl http://192.168.1.1:8000
+  356  nmap -sS -vvv -Pn 192.168.1.1
+  357  sudo nmap -sS -vvv -Pn 192.168.1.1
+  358  ssh root@192.168.1.1
+  359  rm -v ~/.ssh/known_hosts 
+  360  clear
+  361  ssh root@192.168.1.1
+  362  ssh root@192.168.1.1
+  363  clear
+  364  ls
+  365  ssh root@192.168.1.1
+  366  sudo nmap -sS -vvv -Pn 192.168.1.1
+  367  ssh root@192.168.1.1
+  368  rm -v ~/.ssh/known_hosts 
+  369  ssh root@192.168.1.1
+  370  ssh root@192.168.1.1
+  371  ssh root@192.168.1.1
+  372  ssh root@192.168.1.1
+  373  ssh admin@192.168.1.1
+  374  ssh admin@192.168.1.1
+  375  ssh admin@192.168.1.1
+  376  sudo nmap -sS -vvv -Pn 192.168.1.1
+  377  nmap -sS -vvv -Pn 192.168.1.1
+  378  nmap -Pn 192.168.1.1
+  379  sudo nmap -vvv -Ss -Pn 192.168.1.1
+  380  sudo nmap -vvv -sS -Pn 192.168.1.1
+  381  sudo nmap -vvv -sS -Pn 192.168.0.1
+  382  ssh ben@192.168.1.1
+  383  ssh ben@192.168.0.1
+  384  clear
+  385  clear
+  386  bash
+  387  clear
+  388  ls
+  389  ls .git
+  390  rm -rf .git
+  391  clear
+  392  ls
+  393  cd Work/
+  394  ls
+  395  cd Rando/
+  396  ls
+  397  ls .git
+  398  clear
+  399  ls
+  400  git add .
+  401  rm -rf /Users/workbench/.config/git
+  402  sudo rm -rf /Users/workbench/.config/git
+  403  clear
+  404  ls
+  405  git add .
+  406  sudo chown workbench:workbench /Users/workbench/.config/
+  407  sudo chown -R workbench /Users/workbench/.config/
+  408  clear
+  409  ls
+  410  git add .
+  411  git commit -m "init"
+  412  clear
+  413  ls
+  414  brew cask install powershell
+  415  pwsh
+  416  pwd
+  417  git clone git@github.com:benjaminpaulalbrecht/RandOMatic.git
+  418  ls
+  419  cat out.txt 
+  420  wc -l out.txt 
+  421  wc -l out.txt 
+  422  wc -l out.txt 
+  423  wc -l out.txt 
+  424  wc -l out.txt  | tail -f 
+  425  wc -l out.txt  | watch -n1 -c
+  426  wc -l out.txt  | watch -n1 
+  427  wc -l out.txt  
+  428  clear
+  429  ls
+  430  rm -rf out.txt 
+  431  ./GetRandom.sh 
+  432  clear
+  433  ls
+  434  cat out.txt  
+  435  clear
+  436  coear
+  437  clear
+  438  ls
+  439  cat out.txt 
+  440  clear
+  441  rm -rf out.txt 
+  442  clear
+  443  ls
+  444  ./GetRandom.sh 
+  445  clear
+  446  ls
+  447  cat out.txt 
+  448  clear
+  449  rm -rf out.txt 
+  450  ./GetRandom.sh 
+  451  clear
+  452  ls
+  453  git status
+  454  git log 
+  455  clear
+  456  wc -l out.txt 
+  457  wc -l out.txt 
+  458  wc -l out.txt 
+  459  wc -l out.txt 
+  460  clear
+  461  wc -l out.txt 
+  462  wc -l out.txt 
+  463  wc -l out.txt 
+  464  wc -l out.txt 
+  465  wc -l out.txt 
+  466  clear
+  467  ls
+  468  owd
+  469  rm -rvf o.
+  470  rm -rvf out.txt 
+  471  clear
+  472  ls
+  473  clear
+  474  ls
+  475  ssh-keygen 
+  476  cat ~/.ssh/id_rsa.pub 
+  477  clear
+  478  sudo htop
+  479  sudo htop
+  480  /Volumes/Projects/Projects/EmpirePreStage/org/session06282019 ; exit;
+  481  clear
+  482  ls
+  483  export PS1='\w\u\$ ' 
+  484  clear
+  485  ls
+  486  curl -X GET http://oskicat.berkley.edu 
+  487  curl -X GET http://oskicat.berkley.edu -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" 
+  488  clear
+  489  curl -X GET oskicat.berkley.edu -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" 
+  490  clear
+  491  curl -X GET oskicat.berkeley.edu -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0" 
+  492  curl -X GET oskicat.berkeley.edu -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"  -O test.html
+  493  curl -X GET oskicat.berkeley.edu -A "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0"  -o test.html
+  494  clear
+  495  ls
+  496  pwd
+  497  exit
+  498  pwsh
+  499  exit
+  500  clear
+  501  ls
+  502  cat typescript 
+  503  clear
+  504  ls
+  505  cat Out.html 
+  506  clear
+  507  ls
+  508  cat Notes.org 
+  509  cat Notes.org 
+  510  clear
+  511  ls
+  512  cat Out.html  | moe
+  513  cat Out.html  | more
+  514  less Out.html 
+  515  cat Out.html  | grep -i "briefcitTitle"
+  516  cat Out.html  | grep -i "briefcitTitle*" 
+  517  cat Out.html  | grep -i "briefcitTitle>*" 
+  518  cat Out.html  | grep -i "briefcitTitle*" 
+  519  cat Out.html  | grep -i "briefcitTitle. {1,26}" 
+  520  cat Out.html  | grep -i "(briefcitTitle). {1,26}" 
+  521  cat Out.html  | grep -i "(briefcitTitle).{1,26}" 
+  522  cat Out.html  | grep -i "(?<=briefcitTitle?).{1,26}"
+  523  cat Out.html  | grep -i "(briefcitTitle)"
+  524  cat Out.html  | grep -i "briefcitTitle"
+  525  cat Out.html  | grep -i "briefcitTitle{1,10}"
+  526  cat Out.html  | grep -i "briefcitTitle {1,10}"
+  527  cat Out.html  | grep -i "(briefcitTitle) {1,10}"
+  528  cat Out.html  | grep -i "(briefcitTitle)"
+  529  cat Out.html  | grep -i "briefcitTitle"
+  530  cat Out.html  | grep -i "briefcitTitle.*"
+  531  cat Out.html  | grep -i "briefcitTitle+*"
+  532  cat Out.html  | grep -i "briefcitTitle.*"
+  533  cat Out.html  | grep -i "briefcitTitle>"
+  534  cat Out.html  | grep -i "\"briefcitTitle\""
+  535  cat Out.html  | grep -i "\"briefcitTitle>\""
+  536  cat Out.html  | grep -i "\"briefcitTitle\">"
+  537  cat Out.html  | grep -i "\"briefcitTitle\">*[aA-zZ].+"
+  538  cat Out.html  | grep -i "\"briefcitTitle\">*.+"
+  539  cat Out.html  | grep -i "\"briefcitTitle\">*"
+  540  cat Out.html  | grep -i "\"briefcitTitle\">.*"
+  541  cat Out.html  | grep -i "\"briefcitTitle\"> "
+  542  cat Out.html  | grep -i "\"briefcitTitle\">[a-z]*"
+  543  cat Out.html  | grep -i "\"briefcitTitle\">[a-z]"
+  544  cat Out.html  | grep -i "\"briefcitTitle\">"
+  545  cat Out.html  | grep -i "(\"briefcitTitle\">)"
+  546  cat Out.html  | grep -i "\"briefcitTitle\"\>"
+  547  cat Out.html  | grep -i "\"briefcitTitle\">"
+  548  cat Out.html  | grep -i "\"briefcitTitle\">.{5}"
+  549  cat Out.html  | grep -i "\"briefcitTitle\".{5}"
+  550  cat Out.html  | grep -i "(\"briefcitTitle\").{5}"
+  551  cat Out.html  | grep -i "(brief).{5}"
+  552  cat Out.html  | grep -i "{5}.(brief).{5}"
+  553  cat Out.html  | grep -i "*breifcitTitle" 
+  554  cat Out.html  | grep -i "*.breifcitTitle" 
+  555  cat Out.html  | grep -i "breifcitTitle" 
+  556  cat Out.html  | grep -i "breifcitTitle*" 
+  557  cat Out.html  | grep -i "\breifcitTitle" 
+  558  cat Out.html  | grep -i "\"breifcitTitle" 
+  559  cat Out.html  | grep -i "\"breifcitTitle\""  
+  560  cat Out.html  | grep -i "\"breifcitTitle\">"  
+  561  cat Out.html  | grep -i "\"briefcitTitle\"" 
+  562  cat Out.html  | grep -i "\"briefcitTitle\"" 
+  563  cat Out.html  | grep -i "\"briefcitTitle\">" 
+  564  cat Out.html  | grep -i "<\"briefcitTitle\">" 
+  565  cat Out.html  | grep -i "<*\"briefcitTitle\">" 
+  566  cat Out.html  | grep -i "<*\"briefcitTitle\">*" 
+  567  cat Out.html  | grep -i "(<*\"briefcitTitle\">)" 
+  568  cat Out.html  | grep -r "<*\"briefcitTitle\">)" 
+  569  cat Out.html  | grep -e "<*\"briefcitTitle\">)" 
+  570  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  571  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  572  cat Out.html  | grep -e "<*\"briefcitTitle\"> " 
+  573  cat Out.html  | grep -e "<*\"briefcitTitle\">. " 
+  574  cat Out.html  | grep -e "<*\"briefcitTitle\">* " 
+  575  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  576  cat Out.html  | grep -e "<*\"briefcitTitle\">\n" 
+  577  cat Out.html  | grep -e "\b(<*\"briefcitTitle\">)\b" 
+  578  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  579  cat Out.html  | grep -e "<*\"briefcitTitle\">\t*" 
+  580  cat Out.html  | grep -e "<*\"briefcitTitle\">\n*" 
+  581  cat Out.html  | grep -e "<*\"briefcitTitle\">\n*{5}" 
+  582  cat Out.html  | grep -e "<*\"briefcitTitle\">\n*.{5}" 
+  583  cat Out.html  | grep -e "(<*\"briefcitTitle\">\n*)" 
+  584  cat Out.html  | grep -e "(<*\"briefcitTitle\">\n*).{5}" 
+  585  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  586  cat Out.html  | grep -e "<*\"briefcitTitle\"> " 
+  587  cat Out.html  | grep -e "<*\"briefcitTitle\">\n " 
+  588  cat Out.html  | grep -e "<*\"briefcitTitle\">\n* " 
+  589  cat Out.html  | grep -e "<*\"briefcitTitle\">\n*" 
+  590  cat Out.html  | grep -e "<*\"briefcitTitle\">\t* " 
+  591  cat Out.html  | grep -e "<*\"briefcitTitle\">\t*" 
+  592  cat Out.html  | grep -e "(<*\"briefcitTitle\">\t*)" 
+  593  cat Out.html  | grep -e "(<*\"briefcitTitle\">\t*).{5}" 
+  594  cat Out.html  | grep -e "<*\"briefcitTitle\">\t.*" 
+  595  cat Out.html  | grep -e "<*\"briefcitTitle\">\t*." 
+  596  cat Out.html  | grep -e "<*\"briefcitTitle\">\t*.*" 
+  597  cat Out.html  | grep -e "<*\"briefcitTitle\">\t" 
+  598  cat Out.html  | grep -e "<*\"briefcitTitle\">\t*" 
+  599  cat Out.html  | grep -e "<*\"briefcitTitle\">*" 
+  600  cat Out.html  | grep -e "<*\"briefcitTitle\">\t" 
+  601  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  602  cat Out.html  | grep -e "<*\"briefcitTitle\">\s+" 
+  603  cat Out.html  | grep -e "<*\"briefcitTitle\">\s+(\S+)" 
+  604  cat Out.html  | grep -e "<*\"briefcitTitle\">(\S+)" 
+  605  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  606  cat Out.html  | grep -e "(<*\"briefcitTitle\">)\1" 
+  607  cat Out.html  | grep -e "(<*\"briefcitTitle\">)\0" 
+  608  cat Out.html  | grep -e "(<*\"briefcitTitle\">)" 
+  609  cat Out.html  | grep -e "(<*\"briefcitTitle\">)*" 
+  610  cat Out.html  | grep -e "(<*\"briefcitTitle\">).*" 
+  611  cat Out.html  | grep -e "<*\"briefcitTitle\">.*" 
+  612  cat Out.html  | grep -e "<*\"briefcitTitle\">" 
+  613  cat Out.html  | grep -e "\bbriefcitTitle\b" 
+  614  cat Out.html  | grep -e "(\bbriefcitTitle\b)" 
+  615  cat Out.html  | grep -e "(\b(briefcitTitle)\b" 
+  616  cat Out.html  | grep -e "\b(briefcitTitle)\b" 
+  617  cat Out.html  | grep -e "(briefcitTitle)" 
+  618  cat Out.html  | grep -e "\bbriefcitTitle\b" 
+  619  cat Out.html  | grep -e "\bbriefcitTitle\b.*" 
+  620  cat Out.html  | grep -e "(briefcitTitle)" 
+  621  cat Out.html  | grep -e "(briefcitTitle).*" 
+  622  cat Out.html  | grep -e "(briefcitTitle)*" 
+  623  cat Out.html  | grep -e "(briefcitTitle){1}" 
+  624  cat Out.html  | grep -e "(?:briefcitTitle)" 
+  625  cat Out.html  | grep -e "?:briefcitTitle" 
+  626  cat Out.html  | grep -e "briefcitTitle" 
+  627  cat Out.html  | grep -e "a href=*" 
+  628  cat Out.html  | grep -e "a href=*"  > extract.txt
+  629  cat Out.html  | grep -e "a href=*.*<\/a\>"  > extract.txt
+  630  cat Out.html  | grep -e "a href=*.*<\/a\>" 
+  631  cat Out.html  | grep -e "a href=*.*<\/a\>" > extract.txt
+  632  cat Out.html  | grep -e "a href=*.*<\/a\>\<\/span\>" 
+  633  cat Out.html  | grep -e "a href=*.*<\/a\>\<\/span*>" 
+  634  cat Out.html  | grep -e "a href=*.*<\/a\>\<\/span*" 
+  635  cat Out.html  | grep -e "a href=*.*<\/a\>*span*" 
+  636  cat Out.html  | grep -e "a href=*.*<\/a\>.*" 
+  637  cat Out.html  | grep -e "a href=*.*<\/a\>.*"  > ex2.txt
+  638  clear
+  639  cat Out.html  | grep -e "a href=*.*<\/a\>\<\/span\>"  > ex2.txt
+  640  cat Out.html  | grep -e "a href=*.*<\/a\>\<\/span\>" 
+  641  cat Out.html  | grep -e "\%2C*a href=*.*<\/a\>\<\/span\>" 
+  642  cat Out.html  | grep -e "\%2C*a href=*.*<\/a\>" 
+  643  cat Out.html  | grep -e "\%2C>*a href=*.*<\/a\>" 
+  644  cat Out.html  | grep -e "\%2C>*href=*.*<\/a\>" 
+  645  cat Out.html  | grep -e "\%2C>.*href=*.*<\/a\>" 
+  646  cat Out.html  | grep -e "\%2C>.*" 
+  647  cat Out.html  | grep -e "%2C" 
+  648  cat Out.html  | grep -e "%2C>" 
+  649  cat Out.html  | grep -e "%2C\>" 
+  650  clear
+  651  cat Out.html  | grep -e "%2C\>" > ex2.txt
+  652  sed -e "s@*.*%2C\>@@g" ex2.txt 
+  653  sed -e "s@*.*%2C\>@@g" ex2.txt > ex3.txt
+  654  clear
+  655  sed -e "s@\<a*.*%2C\>@@g" ex3.txt 
+  656  sed -e "s@\<\a*.*%2C\>@@g" ex3.txt 
+  657  sed -e "s@\<a href*.*%2C\>@@g" ex3.txt 
+  658  egrep 
+  659  egrep  -e "(\<a href*.*" ex3.txt 
+  660  egrep  -e "(\<a href*.*)" ex3.txt 
+  661  sed -e "(\<a href*.*)" ex3.txt 
+  662  sed -e "s@(\<a href*.*)@@g" ex3.txt 
+  663  sed -e "s@(\<a href.*)@@g" ex3.txt 
+  664  sed -e "s@(\<a href=*)@@g" ex3.txt 
+  665  egrep -e "[aA-zZ].*" ex3.txt 
+  666  egrep -e "[aA-zZ].*" ex3.txt 
+  667  egrep --help 
+  668  egrep -e "[aA-zZ].*" --line-buffered ex3.txt 
+  669  egrep -e "[aA-zZ].*" --line-buffered --color ex3.txt  
+  670  egrep -e "*"  --color ex3.txt  
+  671  egrep -e "([aA-zZ])"  --color ex3.txt  
+  672  egrep -e "([aA-zZ])"   ex3.txt  
+  673  egrep -e "([aA-zZ])" --color=found  ex3.txt  
+  674  egrep -e "([aA-zZ])" --color=always  ex3.txt  
+  675  egrep -e "([aA-zZ])" --color=always  ex3.txt  -l output.txt
+  676  egrep -e "([aA-zZ])" --color=always  ex3.txt  -l 
+  677  clear
+  678  cat ex3.txt 
+  679  clear
+  680  sed 's/<.*>\(.*\)<\/.*>/\1/' 
+  681  sed 's/<.*>\(.*\)<\/.*>/\1/' ex3.txt 
+  682  sed 's/<.*>\(.*\)<\/.*>/\1/' ex3.txt 
+  683  sed -e 's/<[^>]*>//g' ex3.txt
+  684  sed -e 's/<[^>]*>//g' ex3.txt > result.txt
+  685  clear
+  686  clear
+  687  ls
+  688  cat result.txt | more
+  689  cat result.txt | grep -i '\/' 
+  690  cat result.txt | grep -i '\/' --color=always
+  691  cat result.txt 
+  692  clear
+  693  ls
+  694  grep -e '^[A-Z].*$' result.txt 
+  695  grep -e '^[A-Z]$' result.txt 
+  696  grep -e '^[A-Z]*$' result.txt 
+  697  grep -e '^[A-Z].*$' result.txt 
+  698  grep -e '^\b[A-Z]\b.*$' result.txt 
+  699  grep -e '^\b[A-Z]\b$' result.txt 
+  700  grep -e '^\b[A-Z]\b' result.txt 
+  701  grep -e '^\b[A-Z]\b.*' result.txt 
+  702  grep -e '^[A-T].+' result.txt 
+  703  grep -e '^[A-T].*' result.txt 
+  704  grep -e '^[A-Z].*' result.txt 
+  705  sed -e 's@\/.*@@' result.txt 
+  706  sed -e 's@\/.*@@' result.txt > result-noAuthor.txt 
+  707  clear
+  708  cat result-noAuthor.txt 
+  709  clear
+  710  ls
+  711  for each i in `cat result-noAuthor.txt`
+  712  for each  in `cat result-noAuthor.txt`; do  echo $i; done
+  713  clear
+  714  for each $i in `cat result-noAuthor.txt`
+  715  for i in `cat result-noAuthor.txt`; don
+  716  for i in `cat result-noAuthor.txt`; do echo $i ; done
+  717  clear
+  718  clar
+  719  clear
+  720  l
+  721  clear
+  722  ls
+  723  for i in ` \
+cat result-noAuthor.txt | grep -i '^[aA-zZ].*' 
+`; do echo $i ; done
+  724  clear
+  725  for i in ` \
+cat result-noAuthor.txt | grep -i '^\b[aA-zZ].*\b' 
+`; do echo $i ; done
+  726  clear
+  727  ls
+  728  cat result-noAuthor.txt 
+  729  clear
+  730  cat result-noAuthor.txt 
+  731  $fuck = `cat result-noAuthor.txt`
+  732  fuck = `cat result-noAuthor.txt`
+  733  fuck=`cat result-noAuthor.txt`
+  734  for item in $fuck; do  echo $item ; done
+  735  while read -r line; do; cat result-noAuthor.txt; done 
+  736  while read -r line; do; echo $line; done < result-noAuthor.txt 
+  737  while read -r line; do; echo $line; done < result-noAuthor.txt 
+  738  while read -r line; do  echo $line; done < result-noAuthor.txt 
+  739  while read -r book_title; do  echo $book_title; done < result-noAuthor.txt 
+  740  while read -r book_title; do  echo $book_title; done < result-noAuthor.txt 
+  741  while read -r tiitle ; do ./Insert.sh $title ; done < result-noAuthor.txt 
+  742  chmod +x Insert.sh 
+  743  while read -r tiitle ; do ./Insert.sh $title ; done < result-noAuthor.txt 
+  744  while read -r tiitle ; do ./Insert.sh $title ; done < result-noAuthor.txt 
+  745  while read -r title ; do  ./Insert.sh $title; done < result-noAuthor.txt 
+  746  while IFS= read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  747  while IFS= read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  748  while IFS= read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  749  while IFS='' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  750  while IFS=' ' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  751  while IFS=' ' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  752  while IFS=' ' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  753  while IFS=' ' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  754  while IFS=' ' read -r line ; do  ./Insert.sh $line ; done < result-noAuthor.txt 
+  755  history | more
+  756  history > hist

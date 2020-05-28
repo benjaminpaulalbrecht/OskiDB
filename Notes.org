@@ -1,0 +1,6 @@
+** cULR command to use 
+ curl -X GET "http://oskicat.berkeley.edu/search~S1/X?compiler&searchscope=curl -X GET "http://oskicat.berkeley.edu/search~S1/X?compiler&searchscope=1&SORT=DX" -o Out.html1&SORT=DX" -o Out.html
+
+  
+
+  
